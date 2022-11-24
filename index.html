@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINKS DE ESTILO-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--LINKS FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Portafolio #1</title>
+</head>
+<body>
+    <!--header section starts-->
+    <header>
+        <div class="user">
+           <img src="/assets/img/profile.jpg" alt=""> 
+           <h3 class="name">Keyling  Cuadrado</h3>
+           <p class="post">Diseñador Grafico</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--header section ends-->
+    <div id="menu" class="fas fa-bars"> </div>
+    <!--home section starts--> 
+    <section class="home" id="home">
+        <h3> HI THERE</h3>
+        <h1> I'M <span> Keyling Cuadrado</span> </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, unde officiis! Fugiat tenetur sunt ipsum quod numquam voluptates corrupti facilis voluptatibus perferendis molestias sapiente, illum quis hic consequuntur nam ab.</p>
+        <a href="#about"> <button class="btn">about me <i class="fas fa-user"></i></button> </a>
+    </section>
+    <!--home section ends-->
+    <!--about section begins-->
+    <section class="about" id="about">
+        <h1 class="heading"> <span>about </span> me</h1>
+        <div class="row">
+            <div class="info">
+                <h3> <span>name : </span> Keyling Juosel Cuadrado</h3>
+                <h3> <span>age : </span> 26</h3>
+                <h3> <span>languaje : </span> Spanish</h3>
+                <h3> <span>post : </span> Designer</h3>
+                <a href="documents/cv.pdf" target="_blank" download="cv.pdf"><button class="btn"> download CV <i class="fas fa-download"></i></button></a>
+            </div>
+            <div class="counter">
+                <div class="box">
+                    <span>2+</span>
+                    <h3>years of experience</h3>
+                </div>
+                <div class="box">
+                    <span>10+</span>
+                    <h3>projects Completed</h3>
+                </div>
+                <div class="box">
+                    <span>5+</span>
+                    <h3>Happy Clients</h3>
+                </div>
+                <div class="box">
+                    <span>3+</span>
+                    <h3>Working areas</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--about section ends-->
+    <!--education section begins-->
+    <section class="education" id="education">
+        <h1 class="heading">my<span>Experience </span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-briefcase"></i>
+                <span>2016</span>
+                <h3>Tecnico en diseño y producción multimedia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odit illo, ab beatae animi nostrum commodi? Doloribus quaerat dolorem excepturi nihil laudantium vitae, vero iusto itaque sapiente delectus aut iste.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-briefcase"></i>
+                <span>2021</span>
+                <h3>Tecnologo en producción multimedia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odit illo, ab beatae animi nostrum commodi? Doloribus quaerat dolorem excepturi nihil laudantium vitae, vero iusto itaque sapiente delectus aut iste.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-briefcase"></i>
+                <span>2022</span>
+                <h3>Publicidad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odit illo, ab beatae animi nostrum commodi? Doloribus quaerat dolorem excepturi nihil laudantium vitae, vero iusto itaque sapiente delectus aut iste.</p>
+            </div>
+        </div>
+    </section>
+    <!--education section ends-->
+    <!--portafolio section begins-->
+    <section class="portafolio" id="portafolio">
+        <h1 class="heading">my<span>Portafolio </span></h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="#"><img src="assets/img/img1.jpg" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="#"><img src="assets/img/img2.jpg" alt=""></a>
+            </div>
+            <div class="box">
+                <a href="#"><img src="assets/img/img3.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <!--portafolio section ends-->
+    <!--contact section begins-->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Contact</span> me</h1>
+        <div class="row">
+            <div class="content">
+                <h3 class="tittle">contact info</h3>
+                <div class="info">
+                    <h3><i class="fas fa-envelope"></i>keyling-cuadrado@hotmail.com</h3>
+                    <h3><i class="fas fa-phone"></i>3213141241</h3>
+                    <h3><i class="fas fa-map-marker-alt"></i>Bogota, Colombia</h3>
+                </div>
+            </div>
+            <form action="" onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" placeholder="name" class="box" id="nameC">
+                <input type="email" placeholder="email" class="box" id="emailC">
+                <input type="text" placeholder="project" class="box" id="projectC">
+                <textarea name="" id="messageEmail" cols="30" rows="10" class="box message" placeholder="message" ></textarea>
+                <button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+    <!--contact section ends-->
+    <!--scroll top button-->
+    <a href="#home" class="top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        const videoUrl = "https://www.youtube.com/watch?v=QDbjsABOnAU&ab_channel=Mr.WebDesigner";
+        topElement = document.querySelector(".top");jun
+        $(document).ready(function(){
+            $('#menu').click(function(){
+                $(this).toggleClass('fa-times');
+                $('header').toggleClass('toggle');
+            });
+
+           $(window).on('scroll load', function(){
+                $('#menu').removeClass('fa-times');
+                $('header').removeClass('toggle');
+                if($(window).scrollTop() > 0){
+                    topElement.style.display = 'block';
+                }else{
+                    topElement.style.display = 'none';
+                }
+           });  
+        });
+
+        /**
+         * Funcion de mensaje email
+         * */
+        function sendEmail(){
+            let email = document.querySelector("#emailC").value;
+            let name = document.querySelector("#nameC").value;
+            let message = document.querySelector("#emailC").value;
+            let project = document.querySelector("#messageEmail").value;
+
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "keyling1cuadrado@gmail.com",
+                Password : "0C42ACB8F28182EFE613D44FE15F2CF2BD3B",
+                To : 'keyling1cuadrado@gmail.com',
+                From : "keyling1cuadrado@gmail.com",
+                Subject : "Mensaje portal web proyecto: "+project,
+                Body : "Nombre: "+name+"<br> Email:"+email+"<br> Proyecto:"+project+"<br>"+message
+            }).then(
+            message => alert(message)
+            );
+        }
+
+        //smooth scrolling
+        $('a[href*="#"]').click(function(event){
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop:$($(this).attr('href')).offset().top,
+            },
+            500,
+            'linear'
+            
+            );
+        });
+
+    </script>
+</body>
+</html>
